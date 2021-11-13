@@ -38,7 +38,7 @@
     let html: string = '';
 
     /* find all articles and loop through each of them */
-    const articles = document.querySelectorAll(selectorArticle + customSelector) as unknown as HTMLElement[]; // ???
+    const articles = document.querySelectorAll(selectorArticle + customSelector) as NodeListOf<Element>; 
     for ( let article of articles) {
 
       /* find id of the article */
